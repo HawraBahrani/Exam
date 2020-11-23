@@ -1,9 +1,12 @@
 package com.example.myapplication
 
 import android.app.Activity
+import android.graphics.BitmapFactory
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import java.net.URL
+
 class ListAdapter(private val context: Activity, private val title: Array<String>, private val imgid: Array<Int>)
     : ArrayAdapter<String>(context, R.layout.list_view, title) {
 
@@ -19,4 +22,6 @@ class ListAdapter(private val context: Activity, private val title: Array<String
 
         return rowView
     }
+
+
 }
